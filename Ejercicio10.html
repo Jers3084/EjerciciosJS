@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 10</title>
+  </head>
+  <body>
+    <script>
+      var textoentrada = prompt('Introducir Cadena de Texto')
+
+      if (palindromo(textoentrada)) {
+        alert(`El texto ES un PALÍNDROMO`)
+      } else {
+        alert(`El Texto NO es un PALÍNDROMO`)
+      }
+
+      function palindromo(cadena) {
+        var cadenacomp1 = cadena.toUpperCase().replace(/ /gi, ``)
+        var cadenainvertida = cadena.split(``).reverse().join(``)
+        var cadenacomp2 = cadenainvertida.toUpperCase().replace(/ /gi, ``)
+        return cadenacomp1 == cadenacomp2
+      }
+    </script>
+  </body>
+</html>

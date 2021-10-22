@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+  </head>
+  <body>
+    <p id="prueba">Hola</p>
+    <script>
+      var valores = [true, 5, false, "hola", "adios", 2];
+      var a = valores[3];
+      var b = valores[4];
+      if (a.length > b.length) {
+        alert("La longitud de:" + valores[3] + " es mayor que " + valores[4]);
+      } else {
+        console.log(a);
+        console.log(b);
+        alert(`La longitud de: "${valores[3]}" es menor que "${valores[4]}"`);
+      }
+
+      boleanoTrue = valores[0] || valores[2];
+      console.log(boleanoTrue);
+
+      boleanoFalse = valores[0] && valores[2];
+      console.log(boleanoFalse);
+
+      var suma = valores[1] + valores[5];
+      var resta = valores[1] - valores[5];
+      var multiplicacion = valores[1] * valores[5];
+      var division = valores[1] / valores[5];
+      var residuo = valores[1] % valores[5];
+      console.log(`${valores[1]} + ${valores[5]} = ${suma}`);
+      console.log(`${valores[1]} - ${valores[5]} = ${resta}`);
+      console.log(`${valores[1]} * ${valores[5]} = ${multiplicacion}`);
+      console.log(`${valores[1]} / ${valores[5]} = ${division}`);
+      console.log(`${valores[1]} % ${valores[5]} = ${residuo}`);
+    </script>
+  </body>
+</html>
